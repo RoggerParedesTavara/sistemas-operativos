@@ -5,8 +5,8 @@
 int main(int argc, char* argv[]) {
         int fds_h[2];
 	int fds_p[2];
-        int msg_p = 100;
-	int msg_h = 200;
+        int msg_p = random();
+	int msg_h = random();
         pipe(fds_p);
 	pipe(fds_h);
         int i = fork();
